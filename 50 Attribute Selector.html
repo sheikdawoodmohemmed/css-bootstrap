@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selector</title>
+	<style>
+		/*acronym,abbr{
+			color: blue;
+		}*/
+		/* Attribute Selector*/
+		[title]{
+
+			color: blue;
+		}
+		a[href^='https']{
+			color: darkkhaki;
+		}
+		a[target^="_blank"]{
+			color: darkgreen;
+		}
+		img[alt^="icon"]{
+			display: inline-block;
+			border:3px solid darkblue;
+			padding: 5px;
+		}
+		img[alt~="icon"]{
+			display: inline-block;
+			border:3px solid darkgreen;
+			padding: 5px;
+		}
+		a[href$=".docx"]{
+			background: url("word1.png") no-repeat center right;
+			padding-right: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div id="page">
+		<h1>CSS Selector Types</h1>
+		<p><acronym title="Indian Space Research Organization">ISRO</acronym>is an acronym for "Indian Space Research Organization".</p>
+		<p>These links are either external links or will open in new tab,<a href="https://www.google.com" >Google</a>and<a href="	://www.facebook.com" target="_blank">Facebook</a>are big compaines.</p>
+		<p>Icons such as <img src="like.png" alt="icon-like"></p>
+		<p>Icons such as <img src="messages.png" alt="icon"></p>
+		<p>Download<a href="table.docx">Table</a></p>
+		<p><a href="https://www.google.com">Google</a></p>
+		<p><a href="#">Dummy Link</a></p>
+	</div>
+
+</body>
+</html>

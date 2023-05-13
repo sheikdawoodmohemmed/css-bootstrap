@@ -1,0 +1,33 @@
+		p{
+			text-align: left;
+		}
+		h2{
+			color: orange;
+			font-size: 1rem;
+			font-family: 'Segoe UI',Tahoma,Geneva, Verdana,sans-serif;
+		}
+		#page{
+			width: 960px;
+			margin: 0 auto;
+		}
+		#content{
+			background-color: khaki;
+			padding: 10px;
+		}
+		#left-sidebar{
+			width: 20%;
+			float: left;
+			margin-right: 3%;
+		}
+		#main{
+			width: 50%;
+			float: left;
+		}
+		
+		#right-sidebar{
+			width: 20%;
+			float: right;
+		}
+		.clear{
+			clear: both;
+		}

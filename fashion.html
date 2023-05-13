@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Fashion</title>
+    <link rel="stylesheet" href="fashion.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<!--<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>-->
+
+</head>
+<body>
+    <div class="clock"></div>
+    <div id="img">
+    <div id="logo">
+    <img src="images/logo2.jpg">
+    </div>
+    <div class="search">
+        <img src="images/search.png">
+        <h1>MEN'S FASHION SHOPPY</h1>
+        </div>
+    </div>
+    
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="profile">PROFILE</a></li>
+                <li><a href="#home">HOME<a></li>
+                <li><a href="#offers">OFFERS</a></li>
+                <li><a href="#wishlist">WISH LIST</a></li>
+                <li><a href="#orders">ORDERS</a></li>
+                <li><a href="#help">HELP</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menubtn">
+        <img src="images/menu.png" id="menu">
+    </div>
+    <div id="box">
+    <div id="icon">
+        <div class="clock"></div>
+        <ul>
+            <li><figcaption><img src="images/kid.webp">KIDS</figcaption></li>
+            <li><figcaption><img src="images/ethnicsets.webp">ETHNIC SETS</figcaption></li>
+            <li><figcaption><img src="images/jeans.webp">JEANS</figcaption></li>
+            <li><figcaption><img src="images/shirt.webp">SHIRT</figcaption></li>
+            <li><figcaption><img src="images/tshirts.webp">T-SHIRTS</figcaption></li>
+            <li><figcaption><img src="images/winter.webp">CASUALS</figcaption></li>
+        </ul>
+    </div> 
+    
+    <div class="service-box">
+        
+        <div class="single-service">
+           
+            <img src="images/img5.jpg">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>COAT SUITS</h3>
+                <hr>
+                <p>The Suit Doesn't Make You A CEO.<br>But It Sure Does Help You Look Like One.</p>
+            </div>
+        </div>
+        <div class="single-service">
+            <img src="images/img6.jpg">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>CASUAL WEAR</h3>
+                <hr>
+                <p>When It Comes To Casual Clothing.<br>My Enthusiasm For Cloths Starts To Waver.</p>
+            </div>
+        </div>
+        <div class="single-service">
+            <img src="images/img3.jpg">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>FORMAL WEAR</h3>
+                <hr>
+                <p>Simplicity Is The Keynote Of All True Elegance.</p>
+            </div>
+        </div>
+        <div class="single-service">
+            <img src="images/img4.jpg">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>KIDS WAER</h3>
+                <hr>
+                <p>I Think That Playing Dress Up Begins At Age Five And Never Truly Ends.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+   
+
+
+
+    <!-----Script----->
+    <script>
+        var menubtn = document.getElementById("menubtn")
+        var sidenav = document.getElementById("sidenav")
+        var menu = document.getElementById("menu")
+        
+        sidenav.style.right="-250px";
+        
+        menubtn.onclick=function()
+        {
+            if(sidenav.style.right=="-250px"){
+                sidenav.style.right="0";
+                menu.src="images/close.png";
+            }
+            else{
+                sidenav.style.right="-250px";
+                menu.src="images/menu.png";
+            }
+        }
+        // clock //
+        setInterval(()=>{
+            let date = new Date();
+            let clock=document.querySelector('.clock'); 
+
+            clock.innerHTML =
+            date.getHours()+':'+
+            date.getMinutes()+':'+
+            date.getSeconds();
+
+
+
+        },1000)
+    
+    </script>
+  
+    
+</body>
+</html>

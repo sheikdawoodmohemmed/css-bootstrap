@@ -1,0 +1,11 @@
+/*Flex Direction*/
+.container{
+	display: flex;
+	flex-direction:  row;
+	/*justify-content: flex-start; /*Flex Justify Content*/
+	justify-content: center;
+	justify-content: space-around;
+}
+
+
+z

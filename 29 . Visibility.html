@@ -1,0 +1,60 @@
+<html lang =["en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Visible Property</title>
+	<style>
+		#wrapper{
+			width: 50%;
+			border: 2px solid crimson;
+			margin: 0 auto;
+		}
+		a{
+			text-decoration: none;/*
+			Remove Underline*/
+			color: black
+		}
+		/*Background Color for Ul & Li*/
+		li:hover{
+			background-color: yellow;
+			color: white;
+		}
+		ul{
+			background-color: chocolate;
+			/*Change the size of clickable area same as li*/
+			/*padding: 10px;*/
+			/*Change of values will affect*/
+			/*font-size: 24px;*/
+			height: 50px;
+		}
+		li{
+			/*background-color: cadetblue;*/
+			/*change block level to inline */
+			/*display: inline;*/
+			/*Li display as inline as well as will mentionheight */
+			display: inline-block;
+			padding: 0 15px;
+			line-height: 50px;
+		/*Change the size of clickable area*/
+			/*padding: 10px;*/
+			height: 50px;
+
+		}
+		#comingsoon{
+			visibility: visible;
+			/*Property : Visible;*/
+				}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<h1>Display Property</h1>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li id="comingsoon"><a href="#" >Courses</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</div>
+</body>
+</html>

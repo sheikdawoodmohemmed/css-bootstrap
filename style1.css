@@ -1,0 +1,37 @@
+		p{
+			text-align: justify;
+		}
+		#page{
+			width: 960px;
+			margin: 0 auto;
+			/*Inheritance*/ 
+			color: blueviolet;
+			padding: 25px;
+		}
+		#content{
+			
+			padding: 10px;
+			font-family: 'Times New Roman',Times,serif;
+		}
+		#left-sidebar{
+			background-color: khaki;
+			width: 20%;
+			float: left;
+			margin-right: 3%;
+		}
+		#main{
+			width: 50%;
+			float: left;
+		}
+		#right-sidebar{
+			width: 20%;
+			float: right;
+		}
+		h2{
+			color: green;
+			font-size: 1rem;
+			font-family: 'Segoe UI',Tahoma,Geneva, Verdana,sans-serif;
+		}
+		.clear{
+			clear: both;
+		}
